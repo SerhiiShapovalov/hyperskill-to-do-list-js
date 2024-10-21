@@ -110,3 +110,11 @@ li {
 [type="checkbox"] {
   cursor: pointer;
 }
+
+/*.completed {*/
+/*    text-decoration: line-through;*/
+/*}*/
+
+input[type="checkbox"]:checked + label > .task {
+  text-decoration: line-through;
+}

@@ -1,3 +1,5 @@
+"use strict";
+
 const addTaskButton = document.getElementById("add-task-button");
 const inputTask = document.getElementById("input-task");
 const taskList = document.getElementById("task-list");
@@ -48,6 +50,14 @@ function addTask() {
   deleteButton.addEventListener("click", function () {
     taskList.removeChild(li);
   });
+
+  // checkbox.addEventListener('change', function () {
+  //     if (checkbox.checked) {
+  //         span.classList.add('completed');
+  //     } else {
+  //         span.classList.remove('completed');
+  //     }
+  // });
 
   li.appendChild(taskWrap);
   li.appendChild(deleteButton);
